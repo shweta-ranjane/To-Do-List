@@ -1,0 +1,120 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.container{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 100%;
+	background-image: url('https://i.pinimg.com/originals/8b/7f/bc/8b7fbc2e623720393ad7ffa7e4896eac.gif');
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.toDo{
+	
+	max-width: 600px;
+	width: 100%;
+	height: auto;
+	background-color: white;
+	border-radius: 30px;
+	overflow: hidden;
+	padding: 20px;
+}
+.task-div{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	background-color: whitesmoke;
+	height: 30px;
+	position:relative ;
+	border-radius: 20px;
+	padding-left: 20px;
+}
+.task-div button{
+	position: absolute;
+	right: 0;
+	border: none;
+	outline: none;
+	height: 30px;
+	border-radius: 20px;
+	width: 70px;
+	background-color: red;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.task-div button:hover{
+background-color:#323232;
+}
+/*Dark Light Mode*/
+#darkMode{
+	height: auto;
+	border-radius: 30px;
+	overflow: hidden;
+	width: 100%;
+	max-width:700px;
+	padding: 20px;
+}
+
+.dark-mode{
+background-color:black;
+color:white;
+}
+
+#dark {
+	position:absolute;
+	margin-top: 20px;
+	margin-left:285px;
+
+}
+button{
+	background-color: white;
+	position:relative;
+	margin-left: 215px;
+	outline: none;
+	height: 30px;
+	width: 30px;
+	border: none;
+	border-radius: 25px;
+}
+input{
+	flex: 1;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+ul li{
+	list-style-type: none;
+	padding: 8px 25px 10px;
+	position: relative;
+}
+ul li::before{
+	content: '';
+	background-image: url('https://www.freeiconspng.com/uploads/red-square-png-14.png');
+	background-size: contain;
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+ul li.checked{
+	color: grey;
+	text-decoration: line-through;
+}
+ul li.checked::before{
+	background-image: url('https://tse4.mm.bing.net/th?id=OIP.Yely1jL0A4k1X12_2R6PqQHaHa&pid=Api&P=0&h=180');
+}
+span{
+	height: 15px;
+	weidth: 15px;
+	position: absolute;
+	right: 0px;
+}

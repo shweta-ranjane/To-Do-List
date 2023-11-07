@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.10.2/Sortable.min.js"></script>
+	<title>To-Do List</title>
+</head>
+<body>
+	<div class="container">
+		
+		<div class="toDo">
+			<div id="darkMode">
+			<h2>TO-DO LIST &nbsp;
+				<img src="https://media1.tenor.com/images/7d87e607145c7156f2e5321d1751e813/tenor.gif?itemid=14169529" height="50px">
+				<button onclick="myFunction()"id="dark">
+				<img src="https://cdn1.iconfinder.com/data/icons/youtube-23/30/Subtract-4-512.png"  height="30px" width="30px">
+			    </button>
+			</h2>
+			
+			<div class="task-div"> 
+				<input type="text" id="taskEntry" placeholder="Add a task" name="Task">
+				<button onclick="addTask()">ADD</button>
+			</div>
+			
+			<ul id=taskList>
+					
+			</ul>
+		</div>
+		</div>
+	</div>
+<script src="script.js"></script>
+
+</body>
+</html>
